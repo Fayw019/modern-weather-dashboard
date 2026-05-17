@@ -1,0 +1,37 @@
+<div class="app">
+  <h1>Weather Dashboard</h1>
+  <p class="subtitle">Search current weather by city</p>
+
+  <form id="weatherForm" class="search-box">
+    <input id="cityInput" type="text" placeholder="Example: Berlin" required />
+    <button type="submit">Search</button>
+  </form>
+
+  <p id="loading" class="loading hidden">Loading weather...</p>
+  <p id="errorMessage" class="error"></p>
+
+  <section id="weatherCard" class="weather-card hidden">
+    <div class="weather-top">
+      <div>
+        <h2 id="cityName"></h2>
+        <p id="condition"></p>
+      </div>
+
+      <div id="weatherIcon" class="weather-icon">☀️</div>
+    </div>
+
+    <p id="temperature" class="temperature"></p>
+
+    <div class="details">
+      <div>
+        <span>Wind</span>
+        <strong id="wind"></strong>
+      </div>
+
+      <div>
+        <span>Time</span>
+        <strong id="time"></strong>
+      </div>
+    </div>
+  </section>
+</div>
